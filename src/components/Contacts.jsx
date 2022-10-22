@@ -3,8 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { getContacts } from 'redux/contacts/contacts-selectors';
 import { getFilter } from 'redux/filter/filter-selectors';
-import { addContact, removeContact } from 'redux/contacts/contacts-actions';
-import { setFilter } from 'redux/filter/filter-actions';
+import { addContact, removeContact } from 'redux/contacts/contacts-slice';
+import { setFilter } from 'redux/filter/filter-slice';
 
 import Form from './Form';
 import ContactList from './ContactsList';
@@ -14,8 +14,8 @@ import { Box, MainTitle, SecondTitle } from './PhonebookStyled';
 
 
 export default function Contacts() {
-    const { contacts } = useSelector(getContacts);
-    const { filter } = useSelector(getFilter);
+    const contacts = useSelector(getContacts);
+    const filter = useSelector(getFilter);
     const dispatch = useDispatch();
 
     useEffect(() => {

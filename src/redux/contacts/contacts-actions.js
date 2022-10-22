@@ -1,16 +1,18 @@
-import { nanoid } from 'nanoid';
-import { createAction } from '@reduxjs/toolkit';
+// Using Redux Toolkit + Reducer----------------------------------------------
 
-export const addContact = createAction("contacts/add", (data) => {
-    return {
-        payload: {
-            ...data,
-            id: nanoid(),
-        }
-    }
-});
+// import { nanoid } from 'nanoid';
+// import { createAction } from '@reduxjs/toolkit';
 
-export const removeContact = createAction("contacts/remove");
+// export const addContact = createAction("contacts/add", (data) => {
+//     return {
+//         payload: {
+//             ...data,
+//             id: nanoid(),
+//         }
+//     }
+// });
+
+// export const removeContact = createAction("contacts/remove");
 
 // Using vanilla redux--------------------------------------------------------
 

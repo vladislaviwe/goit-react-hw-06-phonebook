@@ -1,11 +1,13 @@
-import { createReducer } from '@reduxjs/toolkit';
-import { setFilter } from './filter-actions';
+// Using Redux Toolkit + Reducer----------------------------------------------
 
-const filterReducer = createReducer("", {
-    [setFilter.type]: (_, {payload}) => payload,
-})
+// import { createReducer } from '@reduxjs/toolkit';
+// import { setFilter } from './filter-actions';
 
-export default filterReducer;
+// const filterReducer = createReducer("", {
+//     [setFilter.type]: (_, {payload}) => payload,
+// })
+
+// export default filterReducer;
 
 // Using vanilla redux--------------------------------------------------------
 

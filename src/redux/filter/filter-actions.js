@@ -1,8 +1,8 @@
-import { createAction } from '@reduxjs/toolkit';
+// Using Redux Toolkit + Reducer----------------------------------------------
 
-export const setFilter = createAction("filter/set");
+// import { createAction } from '@reduxjs/toolkit';
 
-// export const setFilter = createAction()
+// export const setFilter = createAction("filter/set");
 
 // Using vanilla redux--------------------------------------------------------
 
